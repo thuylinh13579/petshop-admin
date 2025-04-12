@@ -9,14 +9,10 @@ import '../public/vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.
 import '../public/vendors/jqvmap/dist/jqvmap.min.css';
 import '../public/vendors/bootstrap-daterangepicker/daterangepicker.css';
 import '../public/build/css/custom.min.css';
-import { Provider } from 'react-redux';
-import { store } from '@/store/store';
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
 
-  return <Provider store={store}>
-  <Component {...pageProps} />
-  </Provider>;
+  return <Component {...pageProps} />
 };
 
 export default MyApp;
