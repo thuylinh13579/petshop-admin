@@ -1,14 +1,14 @@
 import React from 'react'
 
-const footer = () => {
+const Footer = () => {
   return (
-    <footer>
-        <div className="pull-right">
-        Moonlit Vintage - Admin team by TCHieu - VTTHuyen- NTLinh
+    <div className='flex items-center justify-between h-16 px-6 bg-white border-b border-gray-200'>
+        <div className="ms-auto">
+        Petshop - Admin team by TCHieu - VTTHuyen- NTLinh
         </div>
         <div className="clearfix"></div>
-    </footer>
+    </div>
   )
 }
 
-export default footer
+export default Footer

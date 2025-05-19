@@ -1,7 +1,11 @@
+import Dashboard from '@/components/dashboard';
+import Layout from '@/components/layout';
 import React from 'react';
 const Home = () => {
   return (
-    <h1>hi</h1>
+    <Layout>
+      <Dashboard></Dashboard>
+    </Layout>
   )
 };
 

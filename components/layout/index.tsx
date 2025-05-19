@@ -7,19 +7,18 @@ interface LayoutProps {
   children: ReactNode;
 }
 
-const Layout: React.FC<LayoutProps> = ({children}) => {
+const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div className="nav-md">
-        <div className="container body">
-            <div className="main_container">
-                <Navbar></Navbar>
-                <TopNavigation></TopNavigation>
-                <div className="right_col h-auto" role="main">
-                    {children}
-                </div>
-                <Footer></Footer>
-            </div>
-        </div>
+    <div className="flex h-screen overflow-hidden">
+      <Navbar></Navbar>
+
+      <div className="flex flex-col flex-1 overflow-hidden">
+        <TopNavigation></TopNavigation>
+        <main className="flex-1 overflow-y-auto p-6 bg-gray-100">
+          {children}
+        </main>
+        <Footer></Footer>
+      </div>
     </div>
   )
 }
